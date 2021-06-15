@@ -6,18 +6,18 @@ function snapCrackle(maxValue) {
   let str4 = [];
   for (let i = 1; i <= maxValue; i++) {
     if (i % 2 > 0 && i % 5 === 0) {
-      str4[i] = str1 + str2;
+      str4[i] = " " + str1 + str2;
     } else if (i % 5 === 0) {
-      str4[i] = str2;
+      str4[i] =  " " + str2;
     } else if (i % 2 > 0) {
-      str4[i] = str1 + " ";
+      str4[i] =  " " + str1;
     } else if (i % 2 === 0) {
-      str4[i] = i;
+      str4[i] =  " " + i;
     }
   }
   return str4.toString().replace(",", " ");
 }
-/*
+
 console.log(snapCrackle());
 
 function snapCracklePrime(maxValue) {
@@ -42,4 +42,4 @@ function snapCracklePrime(maxValue) {
   }
   console.log(str4);
 }
-snapCracklePrime();*/
+snapCracklePrime();
