@@ -17,15 +17,13 @@ function snapCrackle(maxValue) {
   }
   return str4.toString().replace(",", " ");
 }
-
-console.log(snapCrackle(12));
 /*
+console.log(snapCrackle());
+
 function snapCracklePrime(maxValue) {
   let str4 = [];
   for (let i = 1; i <= maxValue; i++) {
     str4.push(maxValue[i]);
-
-   
 	
 		if( i % 2 > 0 ){
 		str4[i] = 'impar'; }
@@ -41,12 +39,7 @@ function snapCracklePrime(maxValue) {
 
 		else if( i % 5 === 0){
 		str4[i] = "de5";}
-
-	
-
-
   }
-  //		document.write(str4.toString().replace(',',' '));
   console.log(str4);
 }
 snapCracklePrime();*/
