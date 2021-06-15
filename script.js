@@ -15,31 +15,38 @@ function snapCrackle(maxValue) {
       str4[i] =  " " + i;
     }
   }
-  return str4.toString().replace(",", " ");
+  return str4.toString().replace(", ", " ").replace(" ","");
 }
 
-console.log(snapCrackle());
-
+snapCrackle(12);
+//console.log(snapCrackle());
+/*
 function snapCracklePrime(maxValue) {
   let str4 = [];
   for (let i = 1; i <= maxValue; i++) {
-    str4.push(maxValue[i]);
-	
-		if( i % 2 > 0 ){
-		str4[i] = 'impar'; }
-		
-		else	if(i % 2 > 0 && i % 5 === 0){
-		str4[i] = 'impar 5'; }	
-
-		else if(i % 2 === 0){
-		str4[i] = i; }
-
-		else if( i % 1  === 0 && i % i === 0 ) {
-		str4[i] =  'Primo';}	
-
-		else if( i % 5 === 0){
-		str4[i] = "de5";}
+    if(i % 2 > 0 && i % 5 === 0){
+		str4[i] =  " " + str1+str2+str3; 
+    }else	if(i % 2 > 0) {
+      str4[i] =" " + str1
+    } else if(i % 2 == 0) {
+      str4[i] =" " + i
+    } else if( i % 1  === 0 && i % i === 0 ) {
+		str4[i] =   " " + str3;
+    }
   }
-  console.log(str4);
+  return str4.toString().replace(", ", " ").replace(" ","");
+ // console.log(str4);
 }
 snapCracklePrime();
+/*		if( i % 2 > 0 ){
+		str4[i] =   " " + str1;
+    }	else	if(i % 2 > 0 && i % 5 === 0){
+		str4[i] =  " " + str1;; 
+    }	else if(i % 2 === 0){
+		str4[i] =  " " +i; 
+    } else if( i % 1  === 0 && i % i === 0 ) {
+		str4[i] =   " " +'Primo';
+    }	else if( i % 5 === 0){
+		str4[i] =  " " +"de5";
+    }
+***/
